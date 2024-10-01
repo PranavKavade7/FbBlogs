@@ -1,87 +1,112 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Lora', serif;
-    background-color: #f4f4f4;
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f2f5;
     color: #333;
     line-height: 1.6;
 }
 
+/* Container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Header Styling */
 header {
-    grid-column: 1 / -1;
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: white;
+    background-color: #4267B2;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: normal;
 }
 
+/* Main Content Styling */
 main {
-    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 main h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    color: #4267B2;
     margin-bottom: 10px;
-    color: #333;
 }
 
 main p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
+/* Sidebar (About Section) */
 aside {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f2f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 aside h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #4267B2;
 }
 
 aside p {
-    font-size: 1.1rem;
-    line-height: 1.5;
+    font-size: 1rem;
 }
 
+/* Footer Styling */
 footer {
-    grid-column: 1 / -1;
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
+    padding: 10px;
+    background-color: #4267B2;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
 }
 
 footer p {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+/* Old-school Links */
+a {
+    color: #4267B2;
+    text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Boxed Content Styling */
+main, aside {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Life Section */
+.social-life {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
